@@ -5,7 +5,11 @@
     box-sizing: border-box;
 }
 body{
-    background: #001523;
+    background: #212529;
+    transition: 0.5s ease all;
+}
+body.active{
+    background: #f8f9fa;
 }
 .container{
     width: 100%;
@@ -20,20 +24,24 @@ body{
     width: 300px;
     border-radius: 3rem;
     background: #fff;
+    box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.25);
 }
 .indicator{
     position: absolute;
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: #000;
+    background: #212529;
     top: -10px;
     left: -10px;
     transform: scale(0.8);
+    box-shadow: -4px 2px 2px 0px rgba(0,0,0,0.25);
     transition: 0.5s ease all;
+    
 }
 .indicator.active{
     position: absolute;
-    background: red;
+    background: #f8f9fa;
+    box-shadow: 4px 2px 2px 0px rgba(0,0,0,0.25);
     left: 180px;
 }
