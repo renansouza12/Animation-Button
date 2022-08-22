@@ -15,8 +15,19 @@ body{
     justify-content: center;
 }
 .toggle{
-    height: 7rem;
-    width: 20rem;
+    position: relative;
+    height: 110px;
+    width: 300px;
     border-radius: 3rem;
     background: #fff;
+}
+.indicator{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #000;
+    top: -10px;
+    left: -10px;
+    transform: scale(0.8);
 }
